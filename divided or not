@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    double a,b;
+   
+    cout<<"Enter two numbes to divide : "<<endl;
+    cin>>a>>b;
+
+    try
+    {
+       if (b==0)
+       {
+            throw b;
+       }
+       else
+       {
+        cout<<"Answer is : "<<a/b;
+       }
+    }
+    catch(double b)
+    {
+       cout<<"Error !!! ";
+    }
+    
+
+    return 0;
+}
